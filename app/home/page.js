@@ -23,7 +23,6 @@ import FeaturedProjects from "../components/Project";
 import ContactPage from "../components/Contact";
 import ApprochPage from "../components/Approch";
 import AchievementsSection from "../components/Achievement";
-import PortfolioJourney from "../components/Experience";
 
 export default function AboutPage() {
   const stats = [
@@ -351,10 +350,6 @@ export default function AboutPage() {
 
       <section>
         <FeaturedProjects />
-      </section>
-
-      <section>
-        <PortfolioJourney />
       </section>
 
       <section id="certifications">

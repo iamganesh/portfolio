@@ -1,4 +1,4 @@
-import { ChevronRight, Briefcase, MessageSquare } from "lucide-react";
+import { ChevronRight, MessageSquare } from "lucide-react";
 import Link from "next/link";
 
 export default function AboutMeSection() {
@@ -24,23 +24,7 @@ export default function AboutMeSection() {
         </div>
 
         {/* Cards section */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Professional Journey Card */}
-          <div className="bg-[#131a2c] rounded-lg p-6 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="bg-[#1e2a47] p-2 rounded-md">
-                <Briefcase className="text-blue-400 h-5 w-5" />
-              </div>
-              <h2 className="text-xl font-semibold">Professional Journey</h2>
-            </div>
-            <p className="text-gray-300 text-sm">
-              Explore my career path, key milestones, and the experiences that shaped my professional growth.
-            </p>
-            <Link href="/about/journey" className="text-blue-400 flex items-center gap-1 text-sm ">
-              View Journey <ChevronRight className="h-4 w-4" />
-            </Link>
-          </div>
-
+        <div className="grid md:grid-cols-1 gap-6">
           {/* Client Testimonials Card */}
           <div className="bg-[#131a2c] rounded-lg p-6 space-y-4">
             <div className="flex items-center gap-3">
@@ -75,4 +59,3 @@ export default function AboutMeSection() {
     </div>
   )
 }
-

@@ -76,13 +76,6 @@ export default function Navbar() {
           </NavItem>
 
           <NavItem
-            href="/about/journey"
-            isActive={pathname === "/about/journey"}
-          >
-            Experience
-          </NavItem>
-
-          <NavItem
             href="/achievement"
             isActive={pathname.startsWith("/achievement")}
           >
@@ -204,13 +197,6 @@ export default function Navbar() {
                   isActive={pathname.startsWith("/projects")}
                 >
                   Projects
-                </MobileNavItem>
-
-                <MobileNavItem
-                  href="/about/journey"
-                  isActive={pathname === "/about/journey"}
-                >
-                  Experience
                 </MobileNavItem>
 
                 <MobileNavItem
