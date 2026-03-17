@@ -96,7 +96,7 @@ export default function ContactPage() {
           </h1>
 
           <p className="text-gray-400 max-w-2xl mx-auto leading-8">
-            Let's connect for internships, collaboration, or MERN Stack / AI-ML projects.
+           Let&apos;s connect for internships, collaboration, or MERN Stack / AI-ML projects.
           </p>
         </div>
 
