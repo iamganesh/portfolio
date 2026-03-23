@@ -1,19 +1,19 @@
 export const metadata = {
-  title: "Ganesh Baabu - Contact",
+  title: "Kolakanuru Sai Ganesh - Contact",
   description:
-    "Connect with Ganesh Baabu for internships, collaborations, and developer opportunities.",
+    "Connect with Kolakanuru Sai Ganesh for internships, collaborations, and developer opportunities.",
   openGraph: {
-    title: "Ganesh Baabu - Contact",
+    title: "Kolakanuru Sai Ganesh - Contact",
     description:
-      "Connect with Ganesh Baabu for internships, collaborations, and developer opportunities.",
-    url: "https://ganeshbaabu.dev/contact",
+      "Connect with Kolakanuru Sai Ganesh for internships, collaborations, and developer opportunities.",
+    url: "/contact",
     type: "website",
     images: [
       {
         url: "/images/portfolio-preview.png",
         width: 1200,
         height: 630,
-        alt: "Ganesh Baabu Contact",
+        alt: "Kolakanuru Sai Ganesh Contact",
       },
     ],
   },

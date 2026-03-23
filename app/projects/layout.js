@@ -1,19 +1,19 @@
 export const metadata = {
-  title: "Ganesh Baabu - Projects",
+  title: "Kolakanuru Sai Ganesh - Projects",
   description:
-    "Explore Ganesh Baabu's MERN stack, secure systems, and AI/ML projects including Mini Instagram, Secure File Management System, Crop Yield Estimation, and Restaurant Table Booking.",
+    "Explore Kolakanuru Sai Ganesh's MERN stack, secure systems, and AI/ML projects including Mini Instagram, Secure File Management System, Crop Yield Estimation, and Restaurant Table Booking.",
   openGraph: {
-    title: "Ganesh Baabu - Projects",
+    title: "Kolakanuru Sai Ganesh - Projects",
     description:
-      "A showcase of Ganesh Baabu's projects in MERN stack development, secure systems, and AI/ML applications.",
-    url: "https://ganeshbaabu.dev/projects",
+      "A showcase of Kolakanuru Sai Ganesh's projects in MERN stack development, secure systems, and AI/ML applications.",
+    url: "/projects",
     type: "website",
     images: [
       {
         url: "/images/portfolio-preview.png",
         width: 1200,
         height: 630,
-        alt: "Ganesh Baabu Projects",
+        alt: "Kolakanuru Sai Ganesh Projects",
       },
     ],
   },

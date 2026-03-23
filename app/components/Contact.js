@@ -1,15 +1,13 @@
 "use client";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import Link from "next/link";
 import FAQSection from "./FAQ";
 import { FaGithub } from "react-icons/fa";
-import { FaTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import AnimatedContent from "../animations/AnimatedContent";
 import { toast } from "sonner";
-import SocialLinkGrid from "./SocialGrid";
 
 export default function ContactPage() {
   const [isLoading, setisLoading] = useState(false);
@@ -76,10 +74,9 @@ export default function ContactPage() {
           threshold={0.2}
         >
           <h1 className="text-4xl font-bold text-center mb-2 ">
-            Get in <span className="text-purple-400"> Touch</span>
+            Contact <span className="text-purple-400">Me</span>
           </h1>
         </AnimatedContent>
-        {/* <SocialLinkGrid/> */}
         <AnimatedContent
           distance={150}
           direction="vertical"
@@ -117,28 +114,22 @@ export default function ContactPage() {
                 <div className="flex space-x-4 mt-6">
                   {[
                     {
-                      href: "#",
+                      href: "https://github.com/iamganesh",
                       icon: <FaGithub className="w-5 h-5" />,
                       label: "GitHub",
                       friction: 35,
                     },
                     {
-                      href: "#",
-                      icon: <FaTwitter className="w-5 h-5" />,
-                      label: "Twitter",
+                      href: "https://www.linkedin.com/in/ganesh-kolakanuru",
+                      icon: <FaLinkedin className="w-5 h-5" />,
+                      label: "LinkedIn",
                       friction: 30,
                     },
                     {
-                      href: "#",
-                      icon: <FaLinkedin className="w-5 h-5" />,
-                      label: "LinkedIn",
-                      friction: 25,
-                    },
-                    {
-                      href: "#",
+                      href: "mailto:kolakanuruganesh@gmail.com",
                       icon: <MdEmail className="w-5 h-5" />,
                       label: "Email",
-                      friction: 20,
+                      friction: 25,
                     },
                   ].map((link, index) => (
                     <AnimatedContent

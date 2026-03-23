@@ -76,8 +76,7 @@ const FAQSection = () => {
         threshold={0.2}
       >
         <h2 className="text-3xl font-bold text-center  mb-4">
-          Frequently{" "}
-          <span className="text-purple-400">Asked Get in Questions</span>
+          Frequently <span className="text-purple-400">Asked Questions</span>
         </h2>
         <p className="text-center text-gray-400 mb-8">
           Find answers to common questions about my services, collaborations,

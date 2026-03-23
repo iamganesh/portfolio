@@ -81,7 +81,7 @@ export default function AboutPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5">
-                Ganesh <span className="text-purple-400">Baabu</span>
+                Kolakanuru <span className="text-purple-400">Sai Ganesh</span>
               </h1>
 
               <h2 className="text-xl md:text-3xl font-semibold text-gray-200 mb-5">
@@ -174,7 +174,7 @@ export default function AboutPage() {
                   <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-purple-400/20 shadow-[0_0_35px_rgba(168,85,247,0.18)]">
                     <Image
                       src={Me}
-                      alt="Ganesh Baabu"
+                      alt="Kolakanuru Sai Ganesh"
                       fill
                       className="object-cover"
                     />
@@ -182,7 +182,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="mt-6 text-center">
-                  <h3 className="text-3xl font-bold">Ganesh Baabu</h3>
+                  <h3 className="text-3xl font-bold">Kolakanuru Sai Ganesh</h3>
                   <p className="text-purple-300 mt-2 tracking-wide text-sm md:text-base">
                     MERN STACK DEVELOPER | AI/ML ENGINEER
                   </p>

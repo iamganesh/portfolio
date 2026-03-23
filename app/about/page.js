@@ -51,7 +51,7 @@ export default function AboutMeSection() {
           </p>
           <div>
             <button className="bg-white text-purple-900 font-bold px-6 py-2 rounded-md  hover:bg-gray-100 transition-colors">
-              Get in Touch
+              Contact Me
             </button>
           </div>
         </div>
