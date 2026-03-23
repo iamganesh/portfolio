@@ -26,9 +26,9 @@ import AchievementsSection from "../components/Achievement";
 
 export default function AboutPage() {
   const stats = [
-    { value: "3+", label: "Projects Built" },
+    { value: "10+", label: "Projects Built" },
     { value: "10+", label: "Technologies Used" },
-    { value: "4", label: "Certifications" },
+    { value: "12+", label: "Certifications" },
   ];
 
   const tags = [

@@ -34,6 +34,45 @@ export default function AchievementsSection() {
       icon: <BookOpenCheck className="w-5 h-5" />,
       color: "purple",
     },
+    {
+      id: 3,
+      title: "Language Principle & Finite Automata Theory",
+      subtitle: "Academic Certificate",
+      issuer: "Course Completion",
+      date: "2025",
+      description:
+        "Completed certification in language principles and finite automata theory with focus on formal languages and computational models.",
+      type: "certificate",
+      url: "/certificates/language-principle-finite-automata-theory.pdf",
+      icon: <Award className="w-5 h-5" />,
+      color: "orange",
+    },
+    {
+      id: 4,
+      title: "ChatGPT-4 Prompt Engineering for Generative AI",
+      subtitle: "Prompt Engineering Certificate",
+      issuer: "Course Completion",
+      date: "2025",
+      description:
+        "Earned this certificate by learning prompt engineering concepts for generative AI and practical ChatGPT-4 workflows.",
+      type: "certificate",
+      url: "/certificates/chatgpt-4-prompt-engineering-generative-ai.pdf",
+      icon: <BookOpenCheck className="w-5 h-5" />,
+      color: "purple",
+    },
+    {
+      id: 5,
+      title: "Fundamentals of Network Communication",
+      subtitle: "Networking Certificate",
+      issuer: "Course Completion",
+      date: "2025",
+      description:
+        "Completed foundational networking certification covering communication basics, network concepts, and core connectivity principles.",
+      type: "certificate",
+      url: "/certificates/fundamentals-of-network-communication.pdf",
+      icon: <Award className="w-5 h-5" />,
+      color: "orange",
+    },
   ];
 
   return (

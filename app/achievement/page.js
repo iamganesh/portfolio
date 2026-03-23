@@ -46,6 +46,60 @@ const achievements = [
     color: "purple",
     icon: <BookOpenCheck className="w-6 h-6" />,
   },
+  {
+    id: 3,
+    title: "Language Principle & Finite Automata Theory",
+    subtitle: "Academic Certificate",
+    issuer: "Course Completion",
+    issueDate: "2025",
+    description:
+      "Completed this certificate with a strong focus on language principles, formal grammars, automata models, and theoretical computing basics.",
+    highlights: [
+      "Studied formal languages and grammar concepts",
+      "Learned automata theory and computational models",
+      "Strengthened theoretical computer science fundamentals",
+    ],
+    certificateLink:
+      "/certificates/language-principle-finite-automata-theory.pdf",
+    color: "orange",
+    icon: <Award className="w-6 h-6" />,
+  },
+  {
+    id: 4,
+    title: "ChatGPT-4 Prompt Engineering for Generative AI",
+    subtitle: "Prompt Engineering Certificate",
+    issuer: "Course Completion",
+    issueDate: "2025",
+    description:
+      "Earned this certificate by learning practical prompt engineering methods for generative AI, ChatGPT-4 use cases, and structured AI interactions.",
+    highlights: [
+      "Learned prompt design techniques for AI systems",
+      "Explored generative AI workflows with ChatGPT-4",
+      "Improved practical prompting and output control",
+    ],
+    certificateLink:
+      "/certificates/chatgpt-4-prompt-engineering-generative-ai.pdf",
+    color: "purple",
+    icon: <BookOpenCheck className="w-6 h-6" />,
+  },
+  {
+    id: 5,
+    title: "Fundamentals of Network Communication",
+    subtitle: "Networking Certificate",
+    issuer: "Course Completion",
+    issueDate: "2025",
+    description:
+      "Completed this certification covering foundational network communication concepts, data exchange basics, and core networking principles.",
+    highlights: [
+      "Strengthened understanding of network communication basics",
+      "Learned core concepts behind data transmission",
+      "Built stronger networking foundations for real systems",
+    ],
+    certificateLink:
+      "/certificates/fundamentals-of-network-communication.pdf",
+    color: "orange",
+    icon: <Award className="w-6 h-6" />,
+  },
 ];
 
 export default function AchievementsPage() {
