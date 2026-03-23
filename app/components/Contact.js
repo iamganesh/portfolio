@@ -1,11 +1,6 @@
 "use client";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import FAQSection from "./FAQ";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
 import AnimatedContent from "../animations/AnimatedContent";
 import { toast } from "sonner";
 
@@ -93,72 +88,7 @@ export default function ContactPage() {
           </p>
         </AnimatedContent>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left Section */}
-          <div className="space-y-12">
-            {/* Connect with Me */}
-            <AnimatedContent
-              distance={150}
-              direction="horizontal"
-              reverse={true}
-              config={{ tension: 80, friction: 20 }}
-              initialOpacity={0.2}
-              animateOpacity
-              scale={1.1}
-              threshold={0.2}
-            >
-              <div>
-                <h2 className="text-xl font-semibold mb-4 text-purple-400">
-                  Connect with Me
-                </h2>
-                <div className="flex space-x-4 mt-6">
-                  {[
-                    {
-                      href: "https://github.com/iamganesh",
-                      icon: <FaGithub className="w-5 h-5" />,
-                      label: "GitHub",
-                      friction: 35,
-                    },
-                    {
-                      href: "https://www.linkedin.com/in/ganesh-kolakanuru",
-                      icon: <FaLinkedin className="w-5 h-5" />,
-                      label: "LinkedIn",
-                      friction: 30,
-                    },
-                    {
-                      href: "mailto:kolakanuruganesh@gmail.com",
-                      icon: <MdEmail className="w-5 h-5" />,
-                      label: "Email",
-                      friction: 25,
-                    },
-                  ].map((link, index) => (
-                    <AnimatedContent
-                      distance={150}
-                      direction="horizontal"
-                      reverse={true}
-                      config={{ tension: 80, friction: link.friction }}
-                      initialOpacity={0.2}
-                      animateOpacity
-                      scale={1.1}
-                      threshold={0.2}
-                      key={index}
-                    >
-                      <Link
-                        href={link.href}
-                        aria-label={link.label}
-                        className="text-gray-400 hover:text-white transition"
-                      >
-                        {link.icon}
-                      </Link>
-                    </AnimatedContent>
-                  ))}
-                </div>
-                <p className="mt-2 text-sm text-gray-300 font-medium ">
-                  Follow me on social media or send me an email.
-                </p>
-              </div>
-            </AnimatedContent>
-          </div>
+        <div className="max-w-2xl mx-auto">
           <AnimatedContent
             distance={150}
             direction="horizontal"
@@ -232,8 +162,6 @@ export default function ContactPage() {
             </div>
           </AnimatedContent>
         </div>
-
-        <FAQSection />
       </div>
     </div>
   );
