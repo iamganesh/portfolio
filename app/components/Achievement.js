@@ -37,7 +37,7 @@ export default function AchievementsSection() {
   ];
 
   return (
-    <section className="py-16 bg-[#0a101f] text-white" id="achievements">
+    <section className="py-16 bg-[#0a101f] text-white" id="certificates">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedContent
           distance={150}
@@ -51,7 +51,7 @@ export default function AchievementsSection() {
         >
           <div className="text-center mb-10">
             <h2 className="text-4xl font-bold mb-3">
-              Achievements & <span className="text-purple-400">Certificates</span>
+              <span className="text-purple-400">Certificates</span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               My verified learning milestones with direct certificate access.
@@ -78,7 +78,7 @@ export default function AchievementsSection() {
           <div className="mt-10 text-center">
             <Link href="/achievement">
               <Button className="bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white px-8 py-3 rounded-xl transition-transform duration-300 hover:scale-105">
-                See All Achievements
+                See All Certificates
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>

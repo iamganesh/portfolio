@@ -64,11 +64,11 @@ export default function AchievementsPage() {
         >
           <div className="text-center mb-14">
             <div className="inline-flex items-center rounded-full border border-purple-400/20 bg-purple-400/10 px-4 py-2 text-sm text-purple-200 mb-5">
-              ACHIEVEMENTS & CERTIFICATES
+              CERTIFICATES
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              My <span className="text-purple-400">Achievements</span>
+              My <span className="text-purple-400">Certificates</span>
             </h1>
 
             <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg leading-8">
