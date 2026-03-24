@@ -9,11 +9,13 @@ import {
   Code2,
   Database,
   BrainCircuit,
-  BriefcaseBusiness,
   ArrowRight,
   Github,
   Linkedin,
   Mail,
+  GraduationCap,
+  MapPin,
+  CalendarRange,
 } from "lucide-react";
 
 import Me from "@/public/ganesh.jpeg";
@@ -29,6 +31,33 @@ export default function AboutPage() {
     { value: "10+", label: "Projects Built" },
     { value: "10+", label: "Technologies Used" },
     { value: "12+", label: "Certifications" },
+  ];
+
+  const educationTimeline = [
+    {
+      institution: "Lovely Professional University",
+      period: "Aug 2023 - Present",
+      program: "Bachelor of Technology - Computer Science and Engineering",
+      score: "CGPA: 6.6",
+      location: "Phagwara, Punjab",
+      note: "Currently pursuing",
+    },
+    {
+      institution: "Sri Chaitanya Junior College",
+      period: "2020 - 2023",
+      program: "12th Standard",
+      score: "Percentage: 92%",
+      location: "Vijayawada, Andhra Pradesh",
+      note: "Academic foundation in science and mathematics",
+    },
+    {
+      institution: "Golden Bells High School",
+      period: "2019 - 2020",
+      program: "Matriculation",
+      score: "Percentage: 95%",
+      location: "Andhra Pradesh",
+      note: "Built a strong base in core academics",
+    },
   ];
 
   const tags = [
@@ -312,6 +341,94 @@ export default function AboutPage() {
             </AnimatedContent>
           ))}
         </div>
+      </section>
+
+      <section className="w-full xl:w-3/4 mx-auto px-4 md:px-6 pb-8">
+        <AnimatedContent
+          distance={120}
+          direction="vertical"
+          reverse={false}
+          config={{ tension: 80, friction: 20 }}
+          initialOpacity={0.2}
+          animateOpacity
+          scale={1.02}
+          threshold={0.2}
+        >
+          <div className="relative overflow-hidden rounded-[32px] border border-purple-400/15 bg-gradient-to-br from-[#151a31] via-[#11162a] to-[#0b0f1d] p-8 md:p-10">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(168,85,247,0.16),transparent_32%),radial-gradient(circle_at_bottom_left,rgba(96,165,250,0.12),transparent_28%)]" />
+
+            <div className="relative">
+              <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                <div>
+                  <span className="inline-flex items-center gap-2 rounded-full border border-purple-400/20 bg-purple-400/10 px-4 py-2 text-sm text-purple-200">
+                    <GraduationCap className="h-4 w-4" />
+                    Education
+                  </span>
+                  <h2 className="mt-5 text-3xl md:text-4xl font-bold leading-tight">
+                    Academic journey shaping my{" "}
+                    <span className="text-purple-400">engineering mindset</span>
+                  </h2>
+                </div>
+
+                <p className="max-w-xl text-sm md:text-base leading-7 text-gray-400">
+                  A quick look at the institutions and milestones that built my
+                  foundation in computer science, discipline, and problem
+                  solving.
+                </p>
+              </div>
+
+              <div className="mt-8 grid gap-5 lg:grid-cols-3">
+                {educationTimeline.map((item, index) => (
+                  <div
+                    key={item.institution}
+                    className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-purple-400/30 hover:bg-white/[0.06]"
+                  >
+                    <div className="absolute right-0 top-0 h-24 w-24 rounded-full bg-purple-400/10 blur-2xl transition duration-300 group-hover:bg-purple-400/20" />
+
+                    <div className="relative">
+                      <div className="flex items-start justify-between gap-4">
+                        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-purple-400/20 bg-purple-400/10 text-purple-200">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+
+                        <span className="rounded-full border border-blue-400/20 bg-blue-400/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-blue-200">
+                          {item.period}
+                        </span>
+                      </div>
+
+                      <h3 className="mt-5 text-xl font-semibold leading-snug">
+                        {item.institution}
+                      </h3>
+
+                      <p className="mt-3 text-sm leading-7 text-gray-300">
+                        {item.program}
+                      </p>
+
+                      <div className="mt-5 flex flex-wrap gap-3 text-sm">
+                        <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1.5 text-emerald-200">
+                          {item.score}
+                        </span>
+                        <span className="rounded-full border border-purple-400/20 bg-purple-400/10 px-3 py-1.5 text-purple-200">
+                          {item.note}
+                        </span>
+                      </div>
+
+                      <div className="mt-5 flex items-center gap-2 text-sm text-gray-400">
+                        <MapPin className="h-4 w-4 text-purple-300" />
+                        <span>{item.location}</span>
+                      </div>
+
+                      <div className="mt-3 flex items-center gap-2 text-sm text-gray-500">
+                        <CalendarRange className="h-4 w-4 text-purple-300" />
+                        <span>{item.period}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </AnimatedContent>
       </section>
 
       <section className="w-full xl:w-3/4 mx-auto px-4 md:px-6 py-8">

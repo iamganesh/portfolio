@@ -58,8 +58,6 @@ export default function SkillsExpertise() {
         "MongoDB",
         "Mongoose",
         "MySQL",
-        "CRUD Operations",
-        "Schema Design",
         "Database Queries",
       ],
       status: "core",
@@ -133,7 +131,7 @@ export default function SkillsExpertise() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Skills & <span className="text-purple-400">Expertise</span>
+              My <span className="text-purple-400">Skills</span>
             </h1>
 
             <p className="text-gray-300 text-center max-w-3xl mx-auto text-base md:text-lg leading-8">
